@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Bright Ikhifua</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Bright Ikhifua - Course landing page showcasing web development projects, location information, and dynamic features.">
+  <meta name="author" content="Bright Ikhifua">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/base.css">
+  
+  <!-- JavaScript File -->
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <marquee><h1>Welcome to My Website</h1></marquee>
+
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Bright Ikhifua</h1>
+    
+    <div class="grid-container">
+      <section class="card">
+        <h2>About Me</h2>
+        <img src="images/profile.webp" alt="Profile photo of Bright Ikhifua" width="200" height="200">
+        <p>Welcome to my WDD 131 landing page! I am currently pursuing my studies in Web Development, focusing on building dynamic and responsive web applications.</p>
+      </section>
+
+      <section class="card">
+        <h2>Nigeria</h2>
+        <img src="images/nigeria.webp" alt="Aerial view of Lekki-Ikoyi Link Bridge in Lagos, Nigeria" width="300" height="200">
+        <p>I am based in Nigeria. It is known for its vibrant culture, economic energy, and landmark architectural sites like the Lekki-Ikoyi Link Bridge in Lagos.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Ikhifua | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
 </html>
