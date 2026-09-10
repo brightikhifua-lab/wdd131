@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Temple Album – Bright Ikhifua Ifiok</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Temple Album page showcasing responsive gallery design and JavaScript interaction.">
+  <meta name="author" content="Bright Ikhifua Ifiok">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <span id="course-title">Temple Album</span>
+      <button id="menu" aria-label="Toggle Menu"></button>
+    </div>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="gallery">
+      <figure>
+        <img src="https://picsum.photos/id/1018/400/250" alt="Placeholder Temple Image 1" width="400" height="250" loading="lazy">
+        <figcaption>Aba Nigeria Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1015/400/250" alt="Placeholder Temple Image 2" width="400" height="250" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1019/400/250" alt="Placeholder Temple Image 3" width="400" height="250" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1025/400/250" alt="Placeholder Temple Image 4" width="400" height="250" loading="lazy">
+        <figcaption>Logan Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1039/400/250" alt="Placeholder Temple Image 5" width="400" height="250" loading="lazy">
+        <figcaption>Manti Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1043/400/250" alt="Placeholder Temple Image 6" width="400" height="250" loading="lazy">
+        <figcaption>Nauvoo Illinois Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1047/400/250" alt="Placeholder Temple Image 7" width="400" height="250" loading="lazy">
+        <figcaption>Bern Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1050/400/250" alt="Placeholder Temple Image 8" width="400" height="250" loading="lazy">
+        <figcaption>Hamilton New Zealand Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/id/1062/400/250" alt="Placeholder Temple Image 9" width="400" height="250" loading="lazy">
+        <figcaption>London England Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Ikhifua | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
