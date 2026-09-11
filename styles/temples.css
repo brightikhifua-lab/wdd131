@@ -54,9 +54,12 @@ header {
   content: "❌";
 }
 
-.navigation {
+nav {
   display: flex;
   flex-direction: column;
+}
+
+.navigation {
   display: none;
 }
 
