@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastModifiedP.textContent = `Last Modification: ${document.lastModified}`;
   }
 
-  const mainNav = document.querySelector(".navigation");
+  const mainNav = document.querySelector("nav");
   const hambutton = document.querySelector("#menu");
 
   if (hambutton && mainNav) {

@@ -10,13 +10,13 @@
     display: none;
   }
 
-  .navigation {
-    display: flex;
+  nav {
     flex-direction: row;
     gap: 1.5rem;
   }
 
-  .navigation a {
+  nav a {
+    display: block;
     border-radius: 4px;
   }
 

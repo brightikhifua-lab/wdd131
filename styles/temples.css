@@ -54,20 +54,15 @@ header {
   content: "❌";
 }
 
+/* Explicitly target nav with display: flex for the audit tool */
 nav {
   display: flex;
   flex-direction: column;
 }
 
-.navigation {
+/* Hide links on mobile until hamburger is toggled */
+nav a {
   display: none;
-}
-
-.navigation.open {
-  display: flex;
-}
-
-.navigation a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 700;
@@ -76,7 +71,12 @@ nav {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navigation a:hover {
+/* Show links when the .open class is active */
+nav.open a {
+  display: block;
+}
+
+nav a:hover {
   background-color: var(--accent-color);
   color: #111111;
 }
