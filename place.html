@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigeria - Country Page</title>
+  <meta name="description" content="WDD 131 - Country Page assignment highlighting data and weather for Nigeria.">
+  <meta name="author" content="Bright Ikhifua Ifiok">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+        <img src="images/hero-small.webp" alt="Landscape view of Nigeria" width="500" height="250">
+      </picture>
+    </div>
+
+    <section class="card data-card">
+      <h2>Data</h2>
+      <ul>
+        <li><span class="label">Area:</span> 923,769 sq km</li>
+        <li><span class="label">Population:</span> 220+ Million</li>
+        <li><span class="label">Capital:</span> Abuja</li>
+        <li><span class="label">Languages:</span> English, Hausa, Yoruba, Igbo</li>
+        <li><span class="label">Currency:</span> Nigerian Naira (₦)</li>
+        <li><span class="label">Time Zone:</span> WAT (UTC+1)</li>
+        <li><span class="label">Calling Code:</span> +234</li>
+        <li><span class="label">Internet TLD:</span> .ng</li>
+      </ul>
+    </section>
+
+    <section class="card weather-card">
+      <h2>Weather</h2>
+      <div class="weather-icon-mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" fill="#ffc107">
+          <path d="M260-160q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q117 0 198.5 81.5T760-520q67 8 113.5 57.5T920-340q0 75-52.5 127.5T740-160H260Z"/>
+        </svg>
+      </div>
+      <ul>
+        <li><span class="label">Temperature:</span> <span id="temp">8</span> °C</li>
+        <li><span class="label">Conditions:</span> Partly Cloudy</li>
+        <li><span class="label">Wind:</span> <span id="wind">10</span> km/h</li>
+        <li><span class="label">Wind Chill:</span> <span id="windchill"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Ikhifua | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
