@@ -4,9 +4,8 @@
   --secondary-color: #ffffff;
   --text-color: #111111;
   --card-bg: #ffffff;
-  --border-color: #0b3c5d;
   --bg-color: #f0f4f8;
-  --shadow-color: #00000033; /* Standard Hex with alpha transparency */
+  --shadow-color: #00000040;
   --divider-color: #e0e0e0;
   --card-border: #cccccc;
 }
