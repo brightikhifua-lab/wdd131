@@ -48,25 +48,56 @@
         <input type="date" id="install-date" name="installDate" required>
       </div>
 
-      <fieldset class="form-item">
-        <legend>Which features did you find useful? (Check all that apply)</legend>
-        <label class="checkbox-label">
-          <input type="checkbox" id="feature-durability" name="features" value="durability">
-          Durability
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
-          Ease of Use
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox" id="feature-performance" name="features" value="performance">
-          Performance
-        </label>
-        <label class="checkbox-label">
-          <input type="checkbox" id="feature-design" name="features" value="design">
-          Design
-        </label>
-      </fieldset>
+      <!-- Overall Rating (FIXED: added required to all 5 inputs) -->
+<fieldset class="form-item">
+  <legend>Overall Rating <span class="required">*</span></legend>
+  <div class="rating">
+    <input type="radio" id="star5" name="rating" value="5" required>
+    <label for="star5" title="5 stars">&#9733;</label>
+
+    <input type="radio" id="star4" name="rating" value="4" required>
+    <label for="star4" title="4 stars">&#9733;</label>
+
+    <input type="radio" id="star3" name="rating" value="3" required>
+    <label for="star3" title="3 stars">&#9733;</label>
+
+    <input type="radio" id="star2" name="rating" value="2" required>
+    <label for="star2" title="2 stars">&#9733;</label>
+
+    <input type="radio" id="star1" name="rating" value="1" required>
+    <label for="star1" title="1 star">&#9733;</label>
+  </div>
+</fieldset>
+
+<!-- Date of Installation -->
+<div class="form-item">
+  <label for="install-date">Date of Installation <span class="required">*</span></label>
+  <input type="date" id="install-date" name="installDate" required>
+</div>
+
+<!-- Useful Features (FIXED: explicit for attributes on labels) -->
+<fieldset class="form-item">
+  <legend>Which features did you find useful? (Check all that apply)</legend>
+  <div class="checkbox-group">
+    <input type="checkbox" id="feature-durability" name="features" value="durability">
+    <label for="feature-durability">Durability</label>
+  </div>
+
+  <div class="checkbox-group">
+    <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+    <label for="feature-ease">Ease of Use</label>
+  </div>
+
+  <div class="checkbox-group">
+    <input type="checkbox" id="feature-performance" name="features" value="performance">
+    <label for="feature-performance">Performance</label>
+  </div>
+
+  <div class="checkbox-group">
+    <input type="checkbox" id="feature-design" name="features" value="design">
+    <label for="feature-design">Design</label>
+  </div>
+</fieldset>
 
       <div class="form-item">
         <label for="written-review">Written Review (Optional)</label>

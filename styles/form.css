@@ -84,11 +84,17 @@ fieldset {
   padding: 1rem;
 }
 
-.checkbox-label {
-  display: block;
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-group label {
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   cursor: pointer;
 }
 
@@ -96,7 +102,6 @@ fieldset {
   margin-right: 0.5rem;
 }
 
-/* Star Rating CSS */
 .rating {
   display: flex;
   flex-direction: row-reverse;
