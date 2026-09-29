@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="Product Review Form for WDD 131 assignment featuring dynamic product selection, star rating, and user reviews.">
+  <meta name="author" content="Bright Ikhifua Ifiok">
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+      <div class="form-item">
+        <label for="product-name">Product Name <span class="required">*</span></label>
+        <select id="product-name" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="form-item">
+        <legend>Overall Rating <span class="required">*</span></legend>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" required>
+          <label for="star5" title="5 stars">&#9733;</label>
+
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4" title="4 stars">&#9733;</label>
+
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3" title="3 stars">&#9733;</label>
+
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2" title="2 stars">&#9733;</label>
+
+          <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1" title="1 star">&#9733;</label>
+        </div>
+      </fieldset>
+
+      <div class="form-item">
+        <label for="install-date">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="install-date" name="installDate" required>
+      </div>
+
+      <fieldset class="form-item">
+        <legend>Which features did you find useful? (Check all that apply)</legend>
+        <label class="checkbox-label">
+          <input type="checkbox" id="feature-durability" name="features" value="durability">
+          Durability
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+          Ease of Use
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="feature-performance" name="features" value="performance">
+          Performance
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="feature-design" name="features" value="design">
+          Design
+        </label>
+      </fieldset>
+
+      <div class="form-item">
+        <label for="written-review">Written Review (Optional)</label>
+        <textarea id="written-review" name="writtenReview" rows="5" placeholder="Share your experience..."></textarea>
+      </div>
+
+      <div class="form-item">
+        <label for="user-name">Your Name (Optional)</label>
+        <input type="text" id="user-name" name="userName" placeholder="John Doe">
+      </div>
+
+      <div class="form-item">
+        <input type="submit" value="Post Review" class="submit-btn">
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Ikhifua Ifiok | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
