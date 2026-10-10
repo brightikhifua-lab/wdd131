@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future Tech Hub - Join Hub</title>
+  <meta name="description" content="Register for tech study groups and bootcamps at Bright Future Tech Hub.">
+  <meta name="author" content="Bright Ikhifua Ifiok">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>Bright Future Tech Hub</h1>
+    </div>
+    <nav>
+      <button id="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="join.html" class="active">Join Hub</a></li>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Study Group & Bootcamp Registration</h2>
+      <p>Fill out the form below to get connected with a peer study mentor in Lagos.</p>
+
+      <form id="join-form" method="get" action="index.html">
+        <div class="form-group">
+          <label for="full-name">Full Name <span class="required">*</span></label>
+          <input type="text" id="full-name" name="fullName" required placeholder="e.g. John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="track-select">Preferred Track <span class="required">*</span></label>
+          <select id="track-select" name="track" required>
+            <option value="" disabled selected>Select a Learning Track ...</option>
+            <option value="frontend">Frontend Web Development</option>
+            <option value="backend">Backend Systems</option>
+            <option value="fullstack">Fullstack JavaScript</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Experience Level <span class="required">*</span></legend>
+          <div class="radio-option">
+            <input type="radio" id="exp-beginner" name="experience" value="beginner" required>
+            <label for="exp-beginner">Beginner (0 - 6 months)</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="exp-intermediate" name="experience" value="intermediate" required>
+            <label for="exp-intermediate">Intermediate (6 - 18 months)</label>
+          </div>
+          <div class="radio-option">
+            <input type="radio" id="exp-advanced" name="experience" value="advanced" required>
+            <label for="exp-advanced">Advanced (18+ months)</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="goals">Learning Goals (Optional)</label>
+          <textarea id="goals" name="goals" rows="4" placeholder="Tell us what you hope to build..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Register Now" class="submit-btn">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Future Tech Hub | Bright Ikhifua Ifiok</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References & Citations Page</a></p>
+  </footer>
+</body>
+</html>

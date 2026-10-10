@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Future Tech Hub - Home</title>
+  <meta name="description" content="Bright Future Tech Hub offers web development bootcamps, courses, and community learning resources for early-career developers in Lagos.">
+  <meta name="author" content="Bright Ikhifua Ifiok">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/project.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>Bright Future Tech Hub</h1>
+    </div>
+    <nav>
+      <button id="hamburger" aria-label="Toggle Navigation">&#9776;</button>
+      <ul id="primary-nav" class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="join.html">Join Hub</a></li>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Developers collaborating at Bright Future Tech Hub in Lagos" loading="lazy" width="1200" height="500">
+      <div class="hero-content">
+        <h2>Empowering the Next Generation of Developers</h2>
+        <p>Explore curated learning roadmaps, connect with mentors, and join active peer study groups.</p>
+        <a href="join.html" class="cta-btn">Join a Study Group</a>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <h2>Explore Pathways & Bootcamps</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">All Pathways</button>
+        <button class="filter-btn" data-category="frontend">Frontend</button>
+        <button class="filter-btn" data-category="backend">Backend</button>
+        <button class="filter-btn" data-category="fullstack">Fullstack</button>
+      </div>
+    </section>
+
+    <section id="courses-container" class="cards-grid">
+    </section>
+
+    <section class="saved-section">
+      <h2>Your Saved Pathways</h2>
+      <div id="saved-container" class="cards-grid">
+        <p class="empty-msg">No saved pathways yet. Click "Save Pathway" on any course to bookmark it!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Bright Future Tech Hub | Bright Ikhifua Ifiok</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References & Citations Page</a></p>
+  </footer>
+</body>
+</html>
